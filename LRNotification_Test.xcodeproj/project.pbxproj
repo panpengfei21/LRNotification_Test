@@ -12,9 +12,11 @@
 		4D3226C41C7306A7005BC5A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3226C21C7306A7005BC5A9 /* Main.storyboard */; };
 		4D3226C61C7306A7005BC5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3226C51C7306A7005BC5A9 /* Assets.xcassets */; };
 		4D3226C91C7306A7005BC5A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3226C71C7306A7005BC5A9 /* LaunchScreen.storyboard */; };
+		BC5C2F2147FAC119216D3091 /* Pods_LRNotification_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3695F2E94070A4CB77D8C35 /* Pods_LRNotification_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E09A0FB3A277E029125B4EF /* Pods-LRNotification_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRNotification_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRNotification_Test/Pods-LRNotification_Test.release.xcconfig"; sourceTree = "<group>"; };
 		4D3226BB1C7306A7005BC5A9 /* LRNotification_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRNotification_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3226BE1C7306A7005BC5A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D3226C01C7306A7005BC5A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4D3226C51C7306A7005BC5A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3226C81C7306A7005BC5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3226CA1C7306A7005BC5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1B3305592DACA0AC5421B5 /* Pods-LRNotification_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRNotification_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRNotification_Test/Pods-LRNotification_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		E3695F2E94070A4CB77D8C35 /* Pods_LRNotification_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRNotification_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5C2F2147FAC119216D3091 /* Pods_LRNotification_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4D3226BD1C7306A7005BC5A9 /* LRNotification_Test */,
 				4D3226BC1C7306A7005BC5A9 /* Products */,
+				9396794DF3453D125537BD5D /* Pods */,
+				A4483B966DE381415FCCE148 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LRNotification_Test;
 			sourceTree = "<group>";
 		};
+		9396794DF3453D125537BD5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1B3305592DACA0AC5421B5 /* Pods-LRNotification_Test.debug.xcconfig */,
+				3E09A0FB3A277E029125B4EF /* Pods-LRNotification_Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4483B966DE381415FCCE148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3695F2E94070A4CB77D8C35 /* Pods_LRNotification_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3226CD1C7306A7005BC5A9 /* Build configuration list for PBXNativeTarget "LRNotification_Test" */;
 			buildPhases = (
+				EE8FF4FCF2D8F1F02F13F03F /* Check Pods Manifest.lock */,
 				4D3226B71C7306A7005BC5A9 /* Sources */,
 				4D3226B81C7306A7005BC5A9 /* Frameworks */,
 				4D3226B91C7306A7005BC5A9 /* Resources */,
+				D41C74A22B99FEE52FDAB14F /* Embed Pods Frameworks */,
+				390000ED183A2FC89ECD0C89 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		390000ED183A2FC89ECD0C89 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LRNotification_Test/Pods-LRNotification_Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D41C74A22B99FEE52FDAB14F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LRNotification_Test/Pods-LRNotification_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8FF4FCF2D8F1F02F13F03F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D3226B71C7306A7005BC5A9 /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		4D3226CE1C7306A7005BC5A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1B3305592DACA0AC5421B5 /* Pods-LRNotification_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LRNotification_Test/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		4D3226CF1C7306A7005BC5A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E09A0FB3A277E029125B4EF /* Pods-LRNotification_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LRNotification_Test/Info.plist;
@@ -284,6 +361,7 @@
 				4D3226CF1C7306A7005BC5A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
